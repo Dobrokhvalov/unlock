@@ -55,6 +55,7 @@ contract('Lock / erc721 / Non_Public_approve', accounts => {
           .then(() => {
             // accounts[2] purchases a key
             return locks['RESTRICTED'].purchase(
+              0,
               accounts[2],
               web3.utils.padLeft(0, 40),
               [],
@@ -103,6 +104,7 @@ contract('Lock / erc721 / Non_Public_approve', accounts => {
         })
         // accounts[5] purchases a key
         await locks['RESTRICTED'].purchase(
+          0,
           accounts[5],
           web3.utils.padLeft(0, 40),
           [],
@@ -126,6 +128,7 @@ contract('Lock / erc721 / Non_Public_approve', accounts => {
         })
         // accounts[5] purchases a key
         await locks['RESTRICTED'].purchase(
+          0,
           accounts[5],
           web3.utils.padLeft(0, 40),
           [],
